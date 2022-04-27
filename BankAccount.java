@@ -1,9 +1,11 @@
 import java.util.*;
 public class BankAccount
 {
+   //Defines the properties of a bank account
    private int id;
    private double balance, annualInterestRate;
    private Date dateCreated;
+   //Default constructor for nonspecified bank accounts
    BankAccount()
    {
       id = 0;
@@ -11,6 +13,7 @@ public class BankAccount
       annualInterestRate = 0.0;
       dateCreated = new Date();
    }
+   //Overload constructor for data spefied bank accounts
    BankAccount(int x, double y, double z)
    {
       id = x;
@@ -18,6 +21,7 @@ public class BankAccount
       annualInterestRate = z;
       dateCreated = new Date();
    }
+   // general accessor methods
    public int getId()
    {
       return id;
@@ -34,18 +38,22 @@ public class BankAccount
    {
       return dateCreated;
    }
+   // returns the monthly interest rate using the annual interest rate
    public double getMonthlyInterestRate()
    {
       return annualInterestRate / 12;
    }
+   // detemines the ammount of monthly interest using the interest rate and balance
    public double getMonthlyInterest()
    {
       return balance * (getMonthlyInterestRate()/100);
    }
+   // takes money out of the balance
    public void withdraw(double amnt)
    {
       balance -= amnt;
    }
+   // puts money into the balance
    public void deposit(double amnt)
    {
       balance += amnt;
