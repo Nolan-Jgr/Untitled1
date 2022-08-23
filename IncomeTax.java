@@ -1,13 +1,16 @@
 import java.util.*;
+// this program determines the income tax and tax bracket of the given inputed annual income
 public class IncomeTax
 {
    public static void main(String[]args)
    {
+      // user is asked for their annual income
       Scanner scan = new Scanner(System.in);
       System.out.println("enter your annual income");
       int income = scan.nextInt();
       int bracket;
       double amount;
+      // depending on the amount of the user's inputed income the amount is calculated and the bracket is set
       if(income <= 50000)
       {
          amount = (double)income * 0.05;
@@ -33,6 +36,7 @@ public class IncomeTax
          amount = 0.35*(income - 900000) + 172500;
          bracket = 35;
       }
+      // the user's income, bracket, and tax amount are printed
       System.out.println("Annual income: $" + income);
       System.out.println("Tax bracket: " + bracket + "%");
       System.out.println("Tax due amount: $" + (int)amount);
