@@ -1,4 +1,7 @@
 import java.util.*;
+// this program represents the hours worked each day by 3 employees
+// an array is randomly filled with hours from 0 - 10
+// whoever worked the most on a certain day is printed then the total hours for each employee is printed
 public class WeeklyHours
 {
    public static void main(String[]args)
@@ -68,6 +71,7 @@ public class WeeklyHours
       addHours(x);
       
    }
+   // this funtion take in a 2d array and calculates and printed the sum of each row
    public static void addHours(int[][] a)
    {
       int sum1 = 0;
