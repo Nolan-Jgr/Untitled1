@@ -1,4 +1,5 @@
 import java.util.*;
+// this program take in a user-inputed value and displays the cummulative sum
 public class PrintTableSeries
 {
    public static String displaySums(int n)
