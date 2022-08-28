@@ -1,4 +1,7 @@
 import java.util.*;
+// this program uses a quadratic equation object that is defined by 3 ints to represent 
+// a mathematic quadratic equation
+// the roots are then calculated for that equation
 public class QuadraticEquation
 {
    private int a,b,c; 
