@@ -1,4 +1,6 @@
 import java.util.*;
+// this program uses user-inputed values to represented point and calcuates the distance
+// between the two points using the distace formula
 public class distance
 {
    public static void main(String[]args)
