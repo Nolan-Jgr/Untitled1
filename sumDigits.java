@@ -1,4 +1,5 @@
 import java.util.*;
+// this program asks the user to input a number between 0 and 1000 then calculates the sum of the digits within the number
 public class sumDigits
 {
    public static void main(String[]args)
